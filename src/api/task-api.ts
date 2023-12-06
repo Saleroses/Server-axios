@@ -46,11 +46,11 @@ export const TaskAPI = {
     },
 
     deleteTasks(todolistId: string, taskId: string) {
-        return instance.put(`todo-lists/{todolistId}/tasks/${taskId}`, {todolistId, taskId})
+        return instance.delete(`todo-lists/${todolistId}/tasks/${taskId}`)
     },
 
     updateTasks(todolistId: string, taskId: string) {
-        return instance.put(`todo-lists/{todolistId}/tasks/${taskId}`, {todolistId, taskId})
+        return instance.put(`todo-lists/${todolistId}/tasks/${taskId}`, {todolistId, taskId})
     }
 
 };

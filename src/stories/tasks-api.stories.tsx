@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-
 import {TaskAPI} from "../api/task-api";
 
 
@@ -14,6 +13,8 @@ export const GetTask = () => {
     }, [])
     return <div>{JSON.stringify(state)}</div>
 }
+
+
 export const CreateTasks = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
@@ -27,6 +28,8 @@ export const CreateTasks = () => {
 
     return <div>{JSON.stringify(state)}</div>
 }
+
+
 export const DeleteTasks = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
@@ -40,6 +43,8 @@ export const DeleteTasks = () => {
 
     return <div>{JSON.stringify(state)}</div>
 }
+
+
 export const UpdateTaskTitle = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
@@ -54,4 +59,6 @@ export const UpdateTaskTitle = () => {
 
     return <div>{JSON.stringify(state)}</div>
 }
+
+
 
