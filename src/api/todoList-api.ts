@@ -1,6 +1,4 @@
 import axios from "axios";
-import react from "react";
-import {CreateTodolist, DeleteTodolist, GetTodolists} from "../stories/todolists-api.stories";
 
 const instance = axios.create({
         baseURL: 'https://social-network.samuraijs.com/api/1.1/',
